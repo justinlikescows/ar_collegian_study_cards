@@ -73,6 +73,8 @@ const brothersData = [
     { image: "tommy_wunsch.jpg", class: "Alpha Omicron" },
     { image: "maxwell_xu.jpg", class: "Alpha Kappa" }
 ];
+
+
    
 const imageFolder = "./images/"; // Add this line
 
@@ -225,9 +227,9 @@ const modifyElement = (element, edit = false) => {
     let parentDiv = element.parentElement.parentElement;
     let parentQuestion = parentDiv.querySelector(".question-div").innerText;
     let parentImage = parentDiv.querySelector("img").src;
-    let parentClass = parentDiv.querySelector(".class-div").innerText; // Add this line
+    let parentClass = parentDiv.querySelectorAll(".answer-div")[1].innerText; // Corrected this line
     if (edit) {
-      let parentAns = parentDiv.querySelector(".answer-div").innerText;
+      let parentAns = parentDiv.querySelectorAll(".answer-div")[0].innerText;
       answer.value = parentAns;
       question.value = parentQuestion;
       image.value = parentImage;
@@ -235,7 +237,7 @@ const modifyElement = (element, edit = false) => {
       disableButtons(true);
     }
     parentDiv.remove();
-  };
+};
 
 //Disable edit and delete buttons
 const disableButtons = (value) => {
