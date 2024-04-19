@@ -1,0 +1,1 @@
+# ar_collegian_study_cards
