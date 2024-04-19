@@ -10,7 +10,7 @@ const closeBtn = document.getElementById("close-btn");
 const image = document.getElementById("image"); // Add this line
 const filterButton = document.getElementById("filter-btn");
 let currentFilter = "All Classes";
-const classes = ["All Classes", "Alpha Pi", "Alpha Nu", "Alpha Omicron", "Alpha Lambda", "Alpha Mu", "Alpha Xi", "Alpha Kappa"];
+const classes = ["All Classes", "Alpha Pi", "Alpha Omicron", "Alpha Xi", "Alpha Nu", "Alpha Mu", "Alpha Lambda", "Alpha Kappa"];
 let editBool = false;
 
 const brothersData = [
