@@ -4,13 +4,14 @@ const cardButton = document.getElementById("save-btn");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 const pledgeClass = document.getElementById("pledge-class");
+const year = document.getElementById("year");
 const errorMessage = document.getElementById("error");
 const addQuestion = document.getElementById("add-flashcard");
 const closeBtn = document.getElementById("close-btn");
 const image = document.getElementById("image"); // Add this line
 const filterButton = document.getElementById("filter-btn");
-let currentFilter = "All Classes";
-const classes = ["All Classes", "Alpha Pi", "Alpha Omicron", "Alpha Xi", "Alpha Nu", "Alpha Mu", "Alpha Lambda", "Alpha Kappa"];
+let currentFilter = "All Years";
+const years = ["All Years", "Freshman", "Sophomore", "Junior", "Senior"];
 let editBool = false;
 
 const brothersData = [
@@ -704,8 +705,9 @@ const images = brothersData.map((brother) => brother.image);
 
 filterButton.addEventListener("click", () => {
     // Update the current filter
-    let index = classes.indexOf(currentFilter);
-    currentFilter = classes[(index + 1) % classes.length];
+    let index = years.indexOf(currentFilter);
+    currentFilter = years[(index + 1) % years.length];
+    console.log(currentFilter);
     filterButton.innerText = currentFilter;
   
     // Clear the current display
@@ -714,12 +716,13 @@ filterButton.addEventListener("click", () => {
   
     // Refresh the display
     images.forEach((pic) => {
-      question.value = "Who is this?";
-      answer.value = pic.replace("_", " ").replace(".jpg", "").toUpperCase();
+      question.value = "What is this person's year?";
+      year.value = brothersData.find(brother => brother.image === pic).year;
       image.value = imageFolder + pic;
-      pledgeClass.value = brothersData.find(brother => brother.image === pic).class;
+      answer.value = year.value;
+    //   year.value = brothersData.find(brother => brother.image === pic).year;
       console.log(currentFilter);
-      if (currentFilter === "All Classes" || pledgeClass.value === currentFilter) {
+      if (currentFilter === "All Years" || year.value === currentFilter) {
         viewlist();
       }
     });
@@ -731,7 +734,8 @@ addQuestion.addEventListener("click", () => {
   question.value = "";
   answer.value = "";
   image.value = ""; // Add this line
-  pledgeClass.value = "";
+//   year.value = ""; // Add this line 
+//   pledgeClass.value = "";
   addQuestionCard.classList.remove("hide");
 });
 
@@ -756,8 +760,8 @@ cardButton.addEventListener(
       tempQuestion = question.value.trim();
       tempAnswer = answer.value.trim();
       tempImage = image.value.trim();
-      tempPledgeClass = pledgeClass.value.trim(); // Add this line
-      if (!tempQuestion || !tempAnswer || !tempImage || !tempPledgeClass) { // Modify this line
+    //   tempPledgeClass = pledgeClass.value.trim(); // Add this line
+      if (!tempQuestion || !tempAnswer || !tempImage) { // Modify this line
         errorMessage.classList.remove("hide");
       } else {
         container.classList.remove("hide");
@@ -766,7 +770,7 @@ cardButton.addEventListener(
         question.value = "";
         answer.value = "";
         image.value = "";
-        pledgeClass.value = ""; // Add this line
+        // pledgeClass.value = ""; // Add this line
       }
     })
   );
@@ -786,10 +790,10 @@ function viewlist() {
     div.appendChild(displayAnswer); // Add this line
   
     // Class
-    var displayClass = document.createElement("p");
-    displayClass.classList.add("answer-div", "hide");
-    displayClass.innerText = pledgeClass.value;
-    div.appendChild(displayClass); // Add this line
+    // var displayClass = document.createElement("p");
+    // displayClass.classList.add("answer-div", "hide");
+    // displayClass.innerText = pledgeClass.value;
+    // div.appendChild(displayClass); // Add this line
   
     // Add image
     var displayImage = document.createElement("img");
@@ -871,10 +875,10 @@ const disableButtons = (value) => {
 
 window.onload = () => {
     images.forEach((pic) => {
-      question.value = "Who is this?";
-      answer.value = pic.replace("_", " ").replace(".jpg", "").toUpperCase();
+      question.value = "What is this person's year?";
+      answer.value =  brothersData.find(brother => brother.image === pic).year;
       image.value = imageFolder + pic;
-      pledgeClass.value = brothersData.find(brother => brother.image === pic).class; // Add this line
+    //   year.value = brothersData.find(brother => brother.image === pic).year; // Add this line
       viewlist();
     });
   };

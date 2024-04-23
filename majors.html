@@ -2,13 +2,22 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alpha Rho Study Cards</title>
-
+    <title>Alpha Rho Year Cards</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
-    <!-- Header -->
     <header>
       <div style="display: flex; justify-content: space-between; padding: 20px; background-color: #161A30; color: white;">
         <h1 style="margin-right: 20px; padding: 10px;">Alpha Rho Pledge Class Hub</h1>
@@ -18,20 +27,21 @@
           <a href="majors.html" style="margin-right: 20px; color: white;">Majors</a>
       </div>
     </div>
-    </div>
-    </header>
-
+      </header>
+  
     <div class="container">
       <div class="header">
         <div class="add-flashcard-con">
-          <button id="filter-btn">All Classes</button>
+            <button id="filter-btn">All Majors</button>
         </div>
 
         <div class="add-flashcard-con">
           <button id="add-flashcard">Add Flashcard</button>
         </div>
 
- 
+        <!-- <div class="quiz-link-con">
+          <a href="quiz.html">Quiz</a>
+        </div> -->
       </div>
 
       <h1 class="title">Alpha Rho Collegian Study Cards</h1>
@@ -69,15 +79,15 @@
         placeholder="Type the answer here..."
       ></textarea>
       <label for="image">Image:</label>
-      <input type="text" id="image" placeholder="Image URL" />
-      <label for="pledge-class">Pledge Class:</label>
-      <!-- Add this line -->
-      <input type="text" id="pledge-class" placeholder="Pledge Class" />
-      <!-- Add this line -->
+      <input type="text" id="image" placeholder="Image URL">
+      <label for="year">Year:</label> <!-- Add this line -->
+      <input type="text" id="year" placeholder="Year"> <!-- Add this line -->
+        <label for="major">Major:</label> <!-- Add this line -->
+        <input type="text" id="major" placeholder="Major"> <!-- Add this line -->
       <button id="save-btn">Save</button>
     </div>
 
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="majors.js"></script>
   </body>
 </html>

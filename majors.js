@@ -4,13 +4,40 @@ const cardButton = document.getElementById("save-btn");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 const pledgeClass = document.getElementById("pledge-class");
+const year = document.getElementById("year");
+const major = document.getElementById("major");
 const errorMessage = document.getElementById("error");
 const addQuestion = document.getElementById("add-flashcard");
 const closeBtn = document.getElementById("close-btn");
 const image = document.getElementById("image"); // Add this line
 const filterButton = document.getElementById("filter-btn");
-let currentFilter = "All Classes";
-const classes = ["All Classes", "Alpha Pi", "Alpha Omicron", "Alpha Xi", "Alpha Nu", "Alpha Mu", "Alpha Lambda", "Alpha Kappa"];
+let currentFilter = "All Majors";
+const uniqueMajors = [
+    "All Majors",
+    "Business Administration",
+    "Economics",
+    "Management",
+    "Digital Information Systems",
+    "Computer Science",
+    "Informatics (HCI)",
+    "Informatics",
+    "Health Informatics",
+    "Psychology",
+    "Sociology",
+    "Business Information Management",
+    "Classical Civilization",
+    "Philosophy",
+    "Anthropology",
+    "International Studies",
+    "Film and Media Studies",
+    "Statistics",
+    "Digital Arts",
+    "Information and Computer Science",
+    "Mechanical Engineering",
+    "Social Policy & Public Service",
+    "Software Engineering",
+    "Quantitative Economics"
+];
 let editBool = false;
 
 const brothersData = [
@@ -696,16 +723,15 @@ const brothersData = [
     
 ];
 
-
-   
 const imageFolder = "./images/"; // Add this line
 
 const images = brothersData.map((brother) => brother.image);
 
 filterButton.addEventListener("click", () => {
     // Update the current filter
-    let index = classes.indexOf(currentFilter);
-    currentFilter = classes[(index + 1) % classes.length];
+    let index = uniqueMajors.indexOf(currentFilter);
+    currentFilter = uniqueMajors[(index + 1) % uniqueMajors.length];
+    console.log(currentFilter);
     filterButton.innerText = currentFilter;
   
     // Clear the current display
@@ -714,12 +740,20 @@ filterButton.addEventListener("click", () => {
   
     // Refresh the display
     images.forEach((pic) => {
-      question.value = "Who is this?";
-      answer.value = pic.replace("_", " ").replace(".jpg", "").toUpperCase();
+      question.value = "What is this person's major?";
+    const brother = brothersData.find(brother => brother.image === pic);
+    major.value = brother.majors[0];
+    if (brother.majors.length > 1 && brother.majors[1] === currentFilter) {
+      major.value = brother.majors[1];
+    }
+    if (brother.majors.length > 2 && brother.majors[2] === currentFilter) {
+        major.value = brother.majors[2];
+      }
       image.value = imageFolder + pic;
-      pledgeClass.value = brothersData.find(brother => brother.image === pic).class;
+      answer.value = major.value;
+    //   year.value = brothersData.find(brother => brother.image === pic).year;
       console.log(currentFilter);
-      if (currentFilter === "All Classes" || pledgeClass.value === currentFilter) {
+      if (currentFilter === "All Majors" || major.value === currentFilter) {
         viewlist();
       }
     });
@@ -731,7 +765,8 @@ addQuestion.addEventListener("click", () => {
   question.value = "";
   answer.value = "";
   image.value = ""; // Add this line
-  pledgeClass.value = "";
+//   year.value = ""; // Add this line 
+//   pledgeClass.value = "";
   addQuestionCard.classList.remove("hide");
 });
 
@@ -756,8 +791,8 @@ cardButton.addEventListener(
       tempQuestion = question.value.trim();
       tempAnswer = answer.value.trim();
       tempImage = image.value.trim();
-      tempPledgeClass = pledgeClass.value.trim(); // Add this line
-      if (!tempQuestion || !tempAnswer || !tempImage || !tempPledgeClass) { // Modify this line
+    //   tempPledgeClass = pledgeClass.value.trim(); // Add this line
+      if (!tempQuestion || !tempAnswer || !tempImage) { // Modify this line
         errorMessage.classList.remove("hide");
       } else {
         container.classList.remove("hide");
@@ -766,7 +801,7 @@ cardButton.addEventListener(
         question.value = "";
         answer.value = "";
         image.value = "";
-        pledgeClass.value = ""; // Add this line
+        // pledgeClass.value = ""; // Add this line
       }
     })
   );
@@ -786,10 +821,10 @@ function viewlist() {
     div.appendChild(displayAnswer); // Add this line
   
     // Class
-    var displayClass = document.createElement("p");
-    displayClass.classList.add("answer-div", "hide");
-    displayClass.innerText = pledgeClass.value;
-    div.appendChild(displayClass); // Add this line
+    // var displayClass = document.createElement("p");
+    // displayClass.classList.add("answer-div", "hide");
+    // displayClass.innerText = pledgeClass.value;
+    // div.appendChild(displayClass); // Add this line
   
     // Add image
     var displayImage = document.createElement("img");
@@ -871,10 +906,10 @@ const disableButtons = (value) => {
 
 window.onload = () => {
     images.forEach((pic) => {
-      question.value = "Who is this?";
-      answer.value = pic.replace("_", " ").replace(".jpg", "").toUpperCase();
+      question.value = "What is this person's major?";
+      answer.value =  brothersData.find(brother => brother.image === pic).majors;
       image.value = imageFolder + pic;
-      pledgeClass.value = brothersData.find(brother => brother.image === pic).class; // Add this line
+    //   year.value = brothersData.find(brother => brother.image === pic).year; // Add this line
       viewlist();
-    });
+    }); 
   };
