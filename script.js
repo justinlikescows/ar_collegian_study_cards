@@ -38,30 +38,6 @@ const brothersData = [
   }
   ,
   {
-    "name": "David Ayala",
-    "year": "Senior",
-    "majors": ["Economics", "Management"],
-    "hometown": "Baldwin Park, CA",
-    class: "Alpha Lambda",
-    image: "david_ayala.jpg",
-    "industry_interests": ["Brand Marketing"],
-    "recent_position": "Marketing & Analytics Intern @ Niagara Bottling",
-    "campus_involvements": ["Latino Business Student Association", "Merage Financial Service - Student Assistant", "Sigma Chi Fraternity", "UCI Athletics"]
-  }
-  ,
-  {
-    "name": "Aryan Bajaria",
-    "year": "Junior",
-    "majors": ["Business Administration", "Digital Information Systems"],
-    "hometown": "Yorba Linda, CA",
-    class: "Alpha Nu",
-    image: "aryan_bajaria.jpg",
-    "industry_interests": ["Wealth Management", "Consulting", "Finance"],
-    "recent_position": "Asset and Wealth Management @ J.P. Morgan Private Bank",
-    "campus_involvements": ["UCI ANTrepreneur Center", "Sigma Chi", "Mesa Court Housing", "UC-CSU ECCLPS", "REA"]
-  }
-  ,
-  {
     "name": "Abigail Bareiss",
     "year": "Junior",
     "majors": ["Computer Science"],
@@ -97,30 +73,6 @@ const brothersData = [
       "campus_involvements": ["180 Degrees Consulting"]
     },
     {
-      "name": "Kevin Cao",
-      "year": "Senior",
-      "majors": ["Business Information Management"],
-      "hometown": "San Gabriel, CA",
-      class: "Alpha Kappa",
-      image: "kevin_cao.jpg",
-      "industry_interests": ["Software Engineering"],
-      "recent_position": "Vice President of Technology @ MUSA",
-      "campus_involvements": ["ASUCI", "MUSA", "SCNO"]
-    }
-    ,
-    {
-      "name": "Yoyo Cao",
-      "year": "Sophomore",
-      "majors": ["Business Administration"],
-      "hometown": "Shanghai, China",
-      class: "Alpha Xi",
-      image: "yoyo_cao.jpg",
-      "industry_interests": ["Investment Banking", "Consulting"],
-      "recent_position": "Vice President of Finance @ Delta Sigma Pi",
-      "campus_involvements": ["UFA", "SoF"]
-    }
-    ,
-    {
       "name": "Adora Chen",
       "year": "Junior",
       "majors": ["Business Administration", "Digital Arts"],
@@ -130,18 +82,6 @@ const brothersData = [
       "industry_interests": ["Marketing", "UI/UX"],
       "recent_position": "Sales Intern @ TikTok",
       "campus_involvements": ["MUSA", "Marketing Association", "Art History Undergraduate Association", "Model UN", "KUCI 88.9 FM"]
-    }
-    ,
-    {
-      "name": "Jorina Chen",
-      "year": "Senior",
-      "majors": ["Informatics (HCI)", "Health Informatics"],
-      "hometown": "San Jose, CA",
-      class: "Alpha Nu",
-      image: "jorina_chen.jpg",
-      "industry_interests": ["Product Design", "UX Design"],
-      "recent_position": "Product Design Intern @ Atlassian",
-      "campus_involvements": ["Design at UCI", "CTC", "STAR Group Research Assistant", "Merage Research Assistant"]
     }
     ,
     {
@@ -168,30 +108,6 @@ const brothersData = [
     }
     ,
     {
-      "name": "Sean Devine",
-      "year": "Senior",
-      "majors": ["Computer Science"],
-      "hometown": "Koenigstein im Taunus, Germany",
-      class: "Alpha Lambda",
-      image: "sean_devine.jpg",
-      "industry_interests": ["Software Engineering", "Finance"],
-      "recent_position": "Full Stack Software Engineering Intern @ Cubic Transportation Systems",
-      "campus_involvements": ["Association for Computing Machinery"]
-    }
-    ,
-    {
-      "name": "Andrew Doan",
-      "year": "Junior",
-      "majors": ["Informatics", "Sociology"],
-      "hometown": "Westminster, CA",
-      class: "Alpha Mu",
-      image: "andrew_doan.jpg",
-      "industry_interests": ["Product Design", "Product Management"],
-      "recent_position": "Product Design Intern @ Anduril",
-      "campus_involvements": ["Commit the Change", "Product Association"]
-    }
-    ,
-    {
       "name": "Safah Faraz",
       "year": "Sophomore",
       "majors": ["Business Administration"],
@@ -201,18 +117,6 @@ const brothersData = [
       "industry_interests": ["Marketing", "Finance"],
       "recent_position": "Representative @ MUSA",
       "campus_involvements": ["MUSA"]
-    }
-    ,
-    {
-      "name": "Jin Fukusumi",
-      "year": "Junior",
-      "majors": ["Business Administration", "Philosophy"],
-      "hometown": "Hyogo, Japan",
-      class: "Alpha Nu",
-      image: "jin_fukusumi.jpg",
-      "industry_interests": ["Consulting", "Accounting"],
-      "recent_position": "N/A",
-      "campus_involvements": ["MUSA Representative", "Powerlifting @ UCI"]
     }
     ,
     {
@@ -227,29 +131,6 @@ const brothersData = [
       "campus_involvements": ["N/A"]
     }
     ,
-    {
-      "name": "Yeseo Han",
-      "year": "Senior",
-      "majors": ["Business Administration", "Classical Civilization"],
-      "hometown": "Dublin, CA",
-      class: "Alpha Kappa",
-      image: "yeseo_han.jpg",
-      "industry_interests": ["Digital Marketing", "Marketing Strategy"],
-      "recent_position": "Digital Marketing & Sales Strategy Intern @ SoKit Beauty",
-      "campus_involvements": ["UCI ANTrepreneur Center", "Eta Sigma Phi", "ASUCI"]
-    }
-    ,
-    {
-      "name": "Jason Henkel",
-      "year": "Junior",
-      "majors": ["Business Administration"],
-      "hometown": "Davis, CA",
-      class: "Alpha Mu",
-      "industry_interests": ["Entrepreneurship"],
-      "recent_position": "N/A",
-      "campus_involvements": "N/A",
-      image: "jason_henkel.jpg"
-    },
     {
       "name": "Coca Ho",
       "year": "Sophomore",
@@ -295,6 +176,17 @@ const brothersData = [
       "recent_position": "Data Analytics Intern @ General Atomics Aeronautical Systems, Inc.",
       "campus_involvements": ["UCI Women's Club Soccer", "Sports Business Association"],
       image: "diana_huynh.jpg"
+    },
+    {
+      "name": "Jason Henkel",
+      "year": "Junior",
+      "majors": ["Business Administration"],
+      "hometown": "Davis, CA",
+      class: "Alpha Mu",
+      image: "jason_henkel.jpg",
+      "industry_interests": ["Entrepreneurship"],
+      "recent_position": "N/A",
+      "campus_involvements": ["N/A"]
     },
     {
       "name": "James Kent",
@@ -457,18 +349,6 @@ const brothersData = [
     }
     ,
     {
-      "name": "Maryam Mussa",
-      "year": "Senior",
-      "majors": ["Business Administration", "Digital Information Systems"],
-      "hometown": "Cypress, CA",
-      class: "Alpha Xi",
-      image: "maryam_mussa.jpg",
-      "industry_interests": ["Product Management", "Marketing"],
-      "recent_position": "Consumer Insights Intern @ NBCUniversal",
-      "campus_involvements": ["MAISS"]
-    }
-    ,
-    {
       "name": "Collin Na",
       "year": "Sophomore",
       "majors": ["Business Administration"],
@@ -529,18 +409,6 @@ const brothersData = [
     }
     ,
     {
-      "name": "Winnie Qi",
-      "year": "Senior",
-      "majors": ["Business Administration"],
-      "hometown": "San Francisco, CA",
-      class: "Alpha Mu",
-      image: "winnie_qi.jpg",
-      "industry_interests": ["Finance"],
-      "recent_position": "Finance Development Program (FDP) Intern @ Apple",
-      "campus_involvements": ["MUSA", "Product Association"]
-    }
-    ,
-    {
       "name": "Melanie Sagun",
       "year": "Sophomore",
       "majors": ["Business Administration"],
@@ -586,78 +454,7 @@ const brothersData = [
       "recent_position": "SWE Intern @ LoginID",
       "campus_involvements": ["ISC"]
     },
-    {
-      "name": "Dylan Tanzil",
-      "year": "Senior",
-      "majors": ["Business Economics"],
-      "hometown": "Temple City, CA",
-      class: "Alpha Lambda",
-      image: "dylan_tanzil.jpg",
-      "industry_interests": ["Consulting", "Finance"],
-      "recent_position": "Intern @ Linda S. Congleton & Associates",
-      "campus_involvements": ["N/A"]
-    }
-    ,
-    {
-      "name": "Ai Toyama",
-      "year": "Senior",
-      "majors": ["Economics"],
-      "hometown": "Shanghai, China; Millbrae, CA",
-      class: "Alpha Xi",
-      image: "ai_toyama.jpg",
-      "industry_interests": ["Entrepreneurship", "Management", "Recruiting"],
-      "recent_position": "Campus Leader @ Quokka Brew",
-      "campus_involvements": ["Tomo No Kai"]
-    }
-    ,
-    {
-      "name": "Haley Truong",
-      "year": "Senior",
-      "majors": ["Economics", "Accounting"],
-      "hometown": "Irvine, CA",
-      class: "Alpha Nu",
-      image: "haley_truong.jpg",
-      "industry_interests": ["Accounting", "Finance"],
-      "recent_position": "Accounting Intern @ Skyworks Inc",
-      "campus_involvements": ["Beta Alpha Psi", "Accounting Association Leadership Development Program", "Student Assistant @ Paul Merage MBA Programs"]
-    }
-    ,
-    {
-      "name": "Jacob Won",
-      "year": "Senior",
-      "majors": ["Business Administration"],
-      "hometown": "Fullerton, CA",
-      class: "Alpha Xi",
-      image: "jacob_won.jpg",
-      "industry_interests": ["Entrepreneurship", "Consulting"],
-      "recent_position": "STEM Learning Labs Intern @ Alpha Omega Group",
-      "campus_involvements": ["BCEC"]
-    }
-    ,
-    {
-      "name": "Brennen Wong",
-      "year": "Senior",
-      "majors": ["Computer Science"],
-      "hometown": "Diamond Bar, CA",
-      class: "Alpha Kappa",
-      image: "brennen_wong.jpg",
-      "industry_interests": ["Software Engineering"],
-      "recent_position": "Full Stack Software Engineer Intern @ SAP",
-      "campus_involvements": ["ASUCI"]
-    }
-    ,
-    {
-      "name": "Jenny Wu",
-      "year": "Senior",
-      "majors": ["Business Administration"],
-      "hometown": "Castro Valley, CA",
-      class: "Alpha Lambda",
-      image: "jenny_wu.jpg",
-      "industry_interests": ["Human Resources"],
-      "recent_position": "HR Shared Services Intern @ Proofpoint, Inc.",
-      "campus_involvements": ["ASUCI"]
-    }
-    ,
+
     {
       "name": "Evelyn Wu",
       "year": "Senior",
@@ -681,19 +478,6 @@ const brothersData = [
       "recent_position": "Income Tax Intern @ Avantax Wealth Management",
       "campus_involvements": ["180 Degrees Consulting", "UBA"]
     }
-    ,
-    {
-      "name": "Maxwell Xu",
-      "year": "Senior",
-      "majors": ["Economics"],
-      "hometown": "Millbrae, CA",
-      class: "Alpha Kappa",
-      image: "maxwell_xu.jpg",
-      "industry_interests": ["Product Marketing"],
-      "recent_position": "Business Planning Intern @ Microsoft",
-      "campus_involvements": ["Product Association", "MAISS"]
-    }
-    
 ];
 
 
