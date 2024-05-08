@@ -182,7 +182,8 @@ const brothersData = [
       image: "safah_faraz.jpg",
       "industry_interests": ["Marketing", "Finance"],
       "recent_position": "Representative @ MUSA",
-      "campus_involvements": ["MUSA"]
+      "campus_involvements": ["MUSA"],
+      "family": "Liang-Lin"
     }
     ,
     {
@@ -308,7 +309,8 @@ const brothersData = [
       "industry_interests": ["Marketing", "Accounting"],
       "recent_position": "N/A",
       "campus_involvements": ["UBA"],
-      image: "haylie_lee.jpg"
+      image: "haylie_lee.jpg",
+      "family": "Wong-Li"
     },
     {
       "name": "Jacob Lee",

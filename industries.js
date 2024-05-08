@@ -209,7 +209,8 @@ const brothersData = [
       image: "safah_faraz.jpg",
       "industry_interests": ["Marketing", "Finance"],
       "recent_position": "Representative @ MUSA",
-      "campus_involvements": ["MUSA"]
+      "campus_involvements": ["MUSA"],
+      "family": "Liang-Lin"
     }
     ,
     {
@@ -335,7 +336,8 @@ const brothersData = [
       "industry_interests": ["Marketing", "Accounting"],
       "recent_position": "N/A",
       "campus_involvements": ["UBA"],
-      image: "haylie_lee.jpg"
+      image: "haylie_lee.jpg",
+      "family": "Wong-Li"
     },
     {
       "name": "Jacob Lee",
@@ -675,7 +677,8 @@ const brothersData = [
       image: "evelyn_wu.jpg",
       "industry_interests": ["Finance", "Accounting"],
       "recent_position": "Loan Servicing Intern @ Sierra Pacific Mortgage",
-      "campus_involvements": ["Chinese Association"]
+      "campus_involvements": ["Chinese Association"],
+      "family": "Wong-Li"
     }
     ,
     {
