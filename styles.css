@@ -5,7 +5,8 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #f7f9fd;
+    /* background-color: #f7f9fd; */
+    background-image: url("alex_pham.jpg");
   }
   .container {
     width: 90vw;
@@ -197,7 +198,7 @@
   .title {
     font-size: 2em;
     font-weight: 600;
-    color: #363d55;
+    color: white;
     text-align: center;
     margin-bottom: 2em;
   }
@@ -251,6 +252,7 @@
   .card-list-container .card:hover {
     background-color: rgba(255, 255, 255, 0.9);
     border: #31304D solid 3px;
+    text-emphasis-color: white;
     transform: scale(1.05); /* Slightly increase the size of the card */
   }
 
@@ -266,5 +268,3 @@
     color: white; /* Change the text color */
     text-align: center; /* Center the text */
   }
-
-  

@@ -135,6 +135,18 @@ const brothersData = [
       "family": "Lough-Yu"
     },
     {
+      "name": "Eshwar Kuppa",
+      "year": "Freshman",
+      "majors": ["Business Information Management"],
+      "hometown": "Florence, Italy",
+      class: "Alpha Rho",
+      "industry_interests": ["Marketing", "Finance"],
+      "recent_position": "N/A",
+      "campus_involvements": ["N/A"],
+      image: "eshwar_kuppa.jpg",
+      "family": "Huang-Merchant"
+    },
+    {
       "name": "Allison Chu",
       "year": "Junior",
       "majors": ["Business Information Management", "Psychology"],
@@ -311,6 +323,18 @@ const brothersData = [
       "campus_involvements": ["UBA"],
       image: "haylie_lee.jpg",
       "family": "Wong-Li"
+    },
+    {
+      "name": "Andrew Ly",
+      "year": "Sophomore",
+      "majors": ["Business Information Management"],
+      "hometown": "Yee Haw",
+      class: "Alpha Rho",
+      "industry_interests": ["Software Engineering"],
+      "recent_position": "N/A",
+      "campus_involvements": ["MAISS"],
+      image: "andrew_ly.jpg",
+      "family": "Huang-Merchant"
     },
     {
       "name": "Jacob Lee",
@@ -668,6 +692,28 @@ const brothersData = [
     }
 ];
 
+// Select all the cards
+const cards = document.querySelectorAll('.card');
+
+// Define the options for the Intersection Observer
+const options = {
+  root: null, // Use the viewport as the root
+  rootMargin: '0px', // No margins
+  threshold: 0.1 // Call the callback when 10% of the card is visible
+};
+
+// Define the callback
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    // If the card is visible
+    if (entry.isIntersecting) {
+      // Add a class to the card to trigger the reveal animation
+      entry.target.classList.add('reveal');
+    }
+  });
+};
+
+
 const imageFolder = "./images/"; // Add this line
 
 const images = brothersData.map((brother) => brother.image);
@@ -832,8 +878,6 @@ link.addEventListener("click", (event) => {
 });
 div.appendChild(link);
 div.appendChild(displayAnswer);
-
-
 
 // Add exit button
 var exitButton = document.createElement("button");
