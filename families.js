@@ -833,6 +833,8 @@ link.addEventListener("click", (event) => {
 div.appendChild(link);
 div.appendChild(displayAnswer);
 
+
+
 // Add exit button
 var exitButton = document.createElement("button");
 exitButton.innerText = "X";
