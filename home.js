@@ -27,7 +27,8 @@ const brothersData = [
     image: "julitza_alvarez.jpg",
     "industry_interests": ["Communications", "Advocacy"],
     "recent_position": "Communications and Advocacy Intern @ Labor Council for Latin American Advancement",
-    "campus_involvements": ["Sigma Pi Alpha", "CHC"]
+    "campus_involvements": ["Sigma Pi Alpha", "CHC"],
+    "family": "Chang-McGrath"
   },
   {
     "name": "Andrew Ashman",
@@ -38,7 +39,8 @@ const brothersData = [
     image: "andrew_ashman.jpg",
     "industry_interests": ["Consulting", "Asset Management"],
     "recent_position": "Operations & Finance Analyst @ Nouri",
-    "campus_involvements": ["UFA", "LEADS"]
+    "campus_involvements": ["UFA", "LEADS"],
+    "family": "Huang-Merchant"
   }
   ,
   {
@@ -50,7 +52,8 @@ const brothersData = [
     image: "david_ayala.jpg",
     "industry_interests": ["Brand Marketing"],
     "recent_position": "Marketing & Analytics Intern @ Niagara Bottling",
-    "campus_involvements": ["Latino Business Student Association", "Merage Financial Service - Student Assistant", "Sigma Chi Fraternity", "UCI Athletics"]
+    "campus_involvements": ["Latino Business Student Association", "Merage Financial Service - Student Assistant", "Sigma Chi Fraternity", "UCI Athletics"],
+    "family": "Wang-Zhu"
   }
   ,
   {
@@ -62,7 +65,8 @@ const brothersData = [
     image: "abigail_bareiss.jpg",
     "industry_interests": ["Software Engineering"],
     "recent_position": "Software Developer Intern @ Darwins",
-    "campus_involvements": ["Product Association", "Hiking Club at UCI"]
+    "campus_involvements": ["Product Association", "Hiking Club at UCI"],
+    "family": "Su-Hung-Green"
   }
   ,
   {
@@ -74,7 +78,8 @@ const brothersData = [
     image: "kai_bussey.jpg",
     "industry_interests": ["Finance", "Private Equity", "Banking"],
     "recent_position": "N/A",
-    "campus_involvements": ["UBA"]
+    "campus_involvements": ["UBA"],
+    "family": "Chen-Ho"
   }
   ,
     {
@@ -86,7 +91,8 @@ const brothersData = [
       image: "kevin_cao.jpg",
       "industry_interests": ["Software Engineering"],
       "recent_position": "Vice President of Technology @ MUSA",
-      "campus_involvements": ["ASUCI", "MUSA", "SCNO"]
+      "campus_involvements": ["ASUCI", "MUSA", "SCNO"],
+      "family": "Chang-McGrath"
     }
     ,
     {
@@ -98,7 +104,8 @@ const brothersData = [
       image: "yoyo_cao.jpg",
       "industry_interests": ["Investment Banking", "Consulting"],
       "recent_position": "Vice President of Finance @ Delta Sigma Pi",
-      "campus_involvements": ["UFA", "SoF"]
+      "campus_involvements": ["UFA", "SoF"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -110,7 +117,8 @@ const brothersData = [
       image: "adora_chen.jpg",
       "industry_interests": ["Marketing", "UI/UX"],
       "recent_position": "Sales Intern @ TikTok",
-      "campus_involvements": ["MUSA", "Marketing Association", "Art History Undergraduate Association", "Model UN", "KUCI 88.9 FM"]
+      "campus_involvements": ["MUSA", "Marketing Association", "Art History Undergraduate Association", "Model UN", "KUCI 88.9 FM"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -122,7 +130,8 @@ const brothersData = [
       "industry_interests": ["Finance", "Investment Banking"],
       "recent_position": "Finance Leadership Development Program @ Thermo Fisher Scientific, Student Assistant for MBA Recruitment and Administration @ The Paul Merage School of Business",
       "campus_involvements": ["UBA", "CA"],
-      image: "ronica_cheng.jpg"
+      image: "ronica_cheng.jpg",
+      "family": "Lough-Yu"
     },
     {
       "name": "Allison Chu",
@@ -133,7 +142,8 @@ const brothersData = [
       image: "allison_chu.jpg",
       "industry_interests": ["UI/UX design", "Product Design", "Product Management"],
       "recent_position": "Intern @ BCA Watson Rice LLP",
-      "campus_involvements": ["Alpha Phi", "MAISS", "Kaba Modern"]
+      "campus_involvements": ["Alpha Phi", "MAISS", "Kaba Modern"],
+      "family": "Chang-McGrath"
     }
     ,
     {
@@ -145,7 +155,8 @@ const brothersData = [
       image: "sean_devine.jpg",
       "industry_interests": ["Software Engineering", "Finance"],
       "recent_position": "Full Stack Software Engineering Intern @ Cubic Transportation Systems",
-      "campus_involvements": ["Association for Computing Machinery"]
+      "campus_involvements": ["Association for Computing Machinery"],
+      "family": "Chew-Mark"
     }
     ,
     {
@@ -157,7 +168,8 @@ const brothersData = [
       image: "andrew_doan.jpg",
       "industry_interests": ["Product Design", "Product Management"],
       "recent_position": "Product Design Intern @ Anduril",
-      "campus_involvements": ["Commit the Change", "Product Association"]
+      "campus_involvements": ["Commit the Change", "Product Association"],
+      "family": "Zhang-Feng"
     }
     ,
     {
@@ -181,7 +193,8 @@ const brothersData = [
       image: "jin_fukusumi.jpg",
       "industry_interests": ["Consulting", "Accounting"],
       "recent_position": "N/A",
-      "campus_involvements": ["MUSA Representative", "Powerlifting @ UCI"]
+      "campus_involvements": ["MUSA Representative", "Powerlifting @ UCI"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -193,7 +206,8 @@ const brothersData = [
       image: "ayushi_gupta.jpg",
       "industry_interests": ["Finance", "Tech"],
       "recent_position": "Undergraduate Student Assistant @ Merage",
-      "campus_involvements": ["N/A"]
+      "campus_involvements": ["N/A"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -205,7 +219,8 @@ const brothersData = [
       "industry_interests": ["Entrepreneurship"],
       "recent_position": "N/A",
       "campus_involvements": "N/A",
-      image: "jason_henkel.jpg"
+      image: "jason_henkel.jpg",
+      "family": "Zhang-Feng"
     },
     {
       "name": "Coca Ho",
@@ -216,7 +231,8 @@ const brothersData = [
       "industry_interests": ["Consulting", "Accounting"],
       "recent_position": "N/A",
       "campus_involvements": ["Pi Beta Phi", "Club Tennis"],
-      image: "coca_ho.jpg"
+      image: "coca_ho.jpg",
+      "family": "Su-Hung-Green"
     },
     {
       "name": "Devon Huang",
@@ -227,7 +243,8 @@ const brothersData = [
       image: "devon_huang.jpg",
       "industry_interests": ["Wealth Management"],
       "recent_position": "N/A",
-      "campus_involvements": ["N/A"]
+      "campus_involvements": ["N/A"],
+      "family": "Chew-Mark"
     }
     ,
     {
@@ -239,7 +256,8 @@ const brothersData = [
       image: "forest_huang.jpg",
       "industry_interests": ["Consulting", "Product Management"],
       "recent_position": "Program Management Intern @ Duolingo",
-      "campus_involvements": ["180 Degrees Consulting", "Product Association", "UCI Esports"]
+      "campus_involvements": ["180 Degrees Consulting", "Product Association", "UCI Esports"],
+      "family": "Chew-Mark"
     }
     ,
     {
@@ -251,7 +269,8 @@ const brothersData = [
       "industry_interests": ["Data Analytics", "Information Systems", "Digital Marketing"],
       "recent_position": "Data Analytics Intern @ General Atomics Aeronautical Systems, Inc.",
       "campus_involvements": ["UCI Women's Club Soccer", "Sports Business Association"],
-      image: "diana_huynh.jpg"
+      image: "diana_huynh.jpg",
+      "family": "Chen-Ho"
     },
     {
       "name": "James Kent",
@@ -262,7 +281,8 @@ const brothersData = [
       image: "james_kent.jpg",
       "industry_interests": ["Finance", "Consulting"],
       "recent_position": "N/A",
-      "campus_involvements": ["UBA"]
+      "campus_involvements": ["UBA"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -274,7 +294,8 @@ const brothersData = [
       image: "brennan_kim.jpg",
       "industry_interests": ["Finance", "Strategy", "Consulting"],
       "recent_position": "Consumer Insights Intern @ FOX Entertainment",
-      "campus_involvements": ["MBA Programs Student Assistant"]
+      "campus_involvements": ["MBA Programs Student Assistant"],
+      "family": "Wang-Zhu"
     }
     ,
     {
@@ -297,7 +318,8 @@ const brothersData = [
       "industry_interests": ["Consulting", "Finance", "Wealth Management"],
       "recent_position": "N/A",
       "campus_involvements": ["ASUC"],
-      image: "jacob_lee.jpg"
+      image: "jacob_lee.jpg",
+      "family": "Chang-McGrath"
     },
     {
       "name": "Juliana Lee",
@@ -308,7 +330,8 @@ const brothersData = [
       "industry_interests": ["Marketing", "UI/UX Design"],
       "recent_position": "Social Media Marketing Manager @ Niche Street",
       "campus_involvements": ["MAISS"],
-      image: "juliana_lee.jpg"
+      image: "juliana_lee.jpg",
+      "family": "Su-Hung-Green"
     },
     {
       "name": "Nathan Lee",
@@ -319,7 +342,8 @@ const brothersData = [
       image: "nathan_lee.jpg",
       "industry_interests": ["Product", "Marketing", "Strategy"],
       "recent_position": "Product Summer Analyst @ Citi",
-      "campus_involvements": ["Product Association", "MUSA", "FEMBA Paul Merage", "Sigma Chi"]
+      "campus_involvements": ["Product Association", "MUSA", "FEMBA Paul Merage", "Sigma Chi"],
+      "family": "Huang-Merchant"
     }
     ,
     {
@@ -331,7 +355,8 @@ const brothersData = [
       image: "madeline_li.jpg",
       "industry_interests": ["Marketing", "Product Management", "Public Relations"],
       "recent_position": "N/A",
-      "campus_involvements": ["Campus Recreation", "UC Irvine Club Volleyball", "UUMP"]
+      "campus_involvements": ["Campus Recreation", "UC Irvine Club Volleyball", "UUMP"],
+      "family": "Su-Hung-Green"
     }
     ,
     {
@@ -343,7 +368,8 @@ const brothersData = [
       "industry_interests": ["Software Engineering", "Finance", "Quant"],
       "recent_position": "Accounting Intern @ R&F Mart",
       "campus_involvements": ["ITG", "UBA"],
-      image: "jessica_lin.jpg"
+      image: "jessica_lin.jpg",
+      "family": "Chen-Ho"
     },
     {
       "name": "Julia Lin",
@@ -355,7 +381,8 @@ const brothersData = [
       "recent_position": "Finance/Business Operations Acquisition Intern @ NASA Jet Propulsion Laboratory",
       "campus_involvements": ["MUSA", "Campus Representatives", "Amazon Prime Student Campus Manager"],
       image: "julia_lin.jpg",
-      class: "Alpha Mu"
+      class: "Alpha Mu",
+      "family": "Huang-Merchant"
     },
     {
       "name": "Ishan Malik",
@@ -366,7 +393,8 @@ const brothersData = [
       "industry_interests": ["Project Management", "Mechanical Engineering"],
       "recent_position": "Operations Intern @ Siemens",
       "campus_involvements": ["Anteater Formula Racing", "Indian Subcontinental Club", "Ski and Snowboard Club"],
-      image: "ishan_malik.jpg"
+      image: "ishan_malik.jpg",
+      "family": "Huang-Merchant"
     },
     {
       "name": "Isaac Martinez",
@@ -377,7 +405,8 @@ const brothersData = [
       "industry_interests": ["Finance", "Marketing"],
       "recent_position": "N/A",
       "campus_involvements": ["UBA"],
-      image: "isaac_martinez.jpg"
+      image: "isaac_martinez.jpg",
+      "family": "Lough-Yu"
     },
     {
       "name": "Aadi Mehta",
@@ -388,7 +417,8 @@ const brothersData = [
       image: "aadi_mehta.jpg",
       "industry_interests": ["Product Management"],
       "recent_position": "IT Customers Applications Intern @ SMUD",
-      "campus_involvements": ["Indian Subcontinental Club", "UBA", "OIT Classroom Services Staff"]
+      "campus_involvements": ["Indian Subcontinental Club", "UBA", "OIT Classroom Services Staff"],
+      "family": "Zhang-Feng"
     },
     {
       "name": "Mirsab Mirza",
@@ -399,7 +429,8 @@ const brothersData = [
       image: "mirsab_mirza.jpg",
       "industry_interests": ["Marketing", "Public Health"],
       "recent_position": "Marketing Intern @ LA Rams",
-      "campus_involvements": ["Sports Business Association", "UCI Athletics", "Cricket Club", "MAISS", "Future Business Leaders of America"]
+      "campus_involvements": ["Sports Business Association", "UCI Athletics", "Cricket Club", "MAISS", "Future Business Leaders of America"],
+      "family": "Huang-Merchant"
     },
     {
       "name": "Jake Moss",
@@ -410,7 +441,8 @@ const brothersData = [
       image: "jake_moss.jpg",
       "industry_interests": ["Finance", "Consulting"],
       "recent_position": "Risk & Financial Advisory Intern @ Deloitte",
-      "campus_involvements": ["N/A"]
+      "campus_involvements": ["N/A"],
+      "family": "Lough-Yu"
     }
     ,
     {
@@ -422,7 +454,8 @@ const brothersData = [
       image: "maryam_mussa.jpg",
       "industry_interests": ["Product Management", "Marketing"],
       "recent_position": "Consumer Insights Intern @ NBCUniversal",
-      "campus_involvements": ["MAISS"]
+      "campus_involvements": ["MAISS"],
+      "family": "Lough-Yu"
     }
     ,
     {
@@ -434,7 +467,8 @@ const brothersData = [
       image: "collin_na.jpg",
       "industry_interests": ["Finance"],
       "recent_position": "Intern @ The Reserve Investments",
-      "campus_involvements": ["KCM"]
+      "campus_involvements": ["KCM"],
+      "family": "Lough-Yu"
     }
     ,
     {
@@ -446,7 +480,8 @@ const brothersData = [
       image: "elaine_nguyen.jpg",
       "industry_interests": ["Consulting"],
       "recent_position": "N/A",
-      "campus_involvements": ["MBA Programs Student Assistant"]
+      "campus_involvements": ["MBA Programs Student Assistant"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -458,7 +493,8 @@ const brothersData = [
       image: "david_pena.jpg",
       "industry_interests": ["Finance"],
       "recent_position": "Strategy Consultant Extern @ PwC",
-      "campus_involvements": ["MBA Program", "Antreprenuer Center", "FBLA", "SBA", "MUSA"]
+      "campus_involvements": ["MBA Program", "Antreprenuer Center", "FBLA", "SBA", "MUSA"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -470,7 +506,8 @@ const brothersData = [
       image: "alex_pham.jpg",
       "industry_interests": ["Product Management", "VC"],
       "recent_position": "Product Management Intern @ Microsoft",
-      "campus_involvements": ["MAISS", "Product Association @ UCI"]
+      "campus_involvements": ["MAISS", "Product Association @ UCI"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -482,7 +519,8 @@ const brothersData = [
       image: "lohit_potnuru.jpg",
       "industry_interests": ["Finance", "Software Engineering", "PM"],
       "recent_position": "Machine Learning Researcher @ Bioverse Labs",
-      "campus_involvements": ["Manifest", "ITG", "AI Club"]
+      "campus_involvements": ["Manifest", "ITG", "AI Club"],
+      "family": "Chang-McGrath"
     }
     ,
     {
@@ -494,7 +532,8 @@ const brothersData = [
       image: "winnie_qi.jpg",
       "industry_interests": ["Finance"],
       "recent_position": "Finance Development Program (FDP) Intern @ Apple",
-      "campus_involvements": ["MUSA", "Product Association"]
+      "campus_involvements": ["MUSA", "Product Association"],
+      "family": "Su-Hung-Green"
     }
     ,
     {
@@ -506,7 +545,8 @@ const brothersData = [
       image: "melanie_sagun.jpg",
       "industry_interests": ["Marketing"],
       "recent_position": "Marketing Intern @ UCI Athletics",
-      "campus_involvements": ["UBA", "Product Association", "Kababayan"]
+      "campus_involvements": ["UBA", "Product Association", "Kababayan"],
+      "family": "Lough-Yu"
     },
     {
       "name": "Brendon Sato",
@@ -517,7 +557,8 @@ const brothersData = [
       image: "brendon_sato.jpg",
       "industry_interests": ["Consulting", "Finance"],
       "recent_position": "N/A",
-      "campus_involvements": ["N/A"]
+      "campus_involvements": ["N/A"],
+      "family": "Lough-Yu"
     }
     ,
     {
@@ -529,7 +570,8 @@ const brothersData = [
       image: "caden_shaffer.jpg",
       "industry_interests": ["Accounting", "Finance", "Real Estate"],
       "recent_position": "Accounting Intern @ Teacher Created Materials",
-      "campus_involvements": ["Accounting Association", "Beta Alpha Psi"]
+      "campus_involvements": ["Accounting Association", "Beta Alpha Psi"],
+      "family": "Chen-Ho"
     }
     ,
     {
@@ -541,7 +583,8 @@ const brothersData = [
       image: "nithin_senthil.jpg",
       "industry_interests": ["Software Engineering", "Product Management"],
       "recent_position": "SWE Intern @ LoginID",
-      "campus_involvements": ["ISC"]
+      "campus_involvements": ["ISC"],
+      "family": "Chew-Mark"
     },
     {
       "name": "Dylan Tanzil",
@@ -552,7 +595,8 @@ const brothersData = [
       image: "dylan_tanzil.jpg",
       "industry_interests": ["Consulting", "Finance"],
       "recent_position": "Intern @ Linda S. Congleton & Associates",
-      "campus_involvements": ["N/A"]
+      "campus_involvements": ["N/A"],
+      "family": "Wang-Zhu"
     }
     ,
     {
@@ -564,7 +608,8 @@ const brothersData = [
       image: "ai_toyama.jpg",
       "industry_interests": ["Entrepreneurship", "Management", "Recruiting"],
       "recent_position": "Campus Leader @ Quokka Brew",
-      "campus_involvements": ["Tomo No Kai"]
+      "campus_involvements": ["Tomo No Kai"],
+      "family": "Wang-Zhu"
     }
     ,
     {
@@ -576,7 +621,8 @@ const brothersData = [
       image: "jacob_won.jpg",
       "industry_interests": ["Entrepreneurship", "Consulting"],
       "recent_position": "STEM Learning Labs Intern @ Alpha Omega Group",
-      "campus_involvements": ["BCEC"]
+      "campus_involvements": ["BCEC"],
+      "family": "Lough-Yu"
     }
     ,
     {
@@ -588,7 +634,8 @@ const brothersData = [
       image: "jenny_wu.jpg",
       "industry_interests": ["Human Resources"],
       "recent_position": "HR Shared Services Intern @ Proofpoint, Inc.",
-      "campus_involvements": ["ASUCI"]
+      "campus_involvements": ["ASUCI"],
+      "family": "Chang-McGrath"
     }
     ,
     {
@@ -612,7 +659,8 @@ const brothersData = [
       image: "tommy_wunsch.jpg",
       "industry_interests": ["Consulting", "Finance"],
       "recent_position": "Income Tax Intern @ Avantax Wealth Management",
-      "campus_involvements": ["180 Degrees Consulting", "UBA"]
+      "campus_involvements": ["180 Degrees Consulting", "UBA"],
+      "family": "Chang-McGrath"
     }
 ];
 
