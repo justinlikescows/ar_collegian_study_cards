@@ -15,7 +15,7 @@ const majors = document.getElementById("majors");
 const industry_interests = document.getElementById("industry-interests");
 const family = document.getElementById("family");
 let currentFilter = "All Families";
-const families = ["All Families", "Chang-McGrath", "Chen-Ho", "Chew-Mark", "Huang-Merchant", "Lough-Yu", "Su-Hung-Green", "Wang-Zhu"];
+const families = ["All Families", "Chang-McGrath", "Chen-Ho", "Chew-Mark", "Huang-Merchant", "Lough-Yu", "Su-Hung-Green", "Wang-Zhu", "Liang-Li", "Wong-Li"];
 let editBool = false;
 
 const brothersData = [
