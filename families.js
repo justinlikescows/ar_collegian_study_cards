@@ -672,33 +672,35 @@ const imageFolder = "./images/"; // Add this line
 
 const images = brothersData.map((brother) => brother.image);
 
-filterButton.addEventListener("click", () => {
-    // Update the current filter
-    let index = families.indexOf(currentFilter);
-    currentFilter = families[(index + 1) % families.length];
-    filterButton.innerText = currentFilter;
-  
-    // Clear the current display
-    const cardContainer = document.querySelector(".card-list-container");
-    cardContainer.innerHTML = "";
-  
-    // Refresh the display
-    images.forEach((pic) => {
-      question.value = "Who is this?";
-      answer.value = pic.replace("_", " ").replace(".jpg", "").toUpperCase();
-      image.value = imageFolder + pic;
-      pledgeClass.value = brothersData.find(brother => brother.image === pic).class;
-      hometown.value = brothersData.find(brother => brother.image === pic).hometown;
-      year.value = brothersData.find(brother => brother.image === pic).year;
-      majors.value = brothersData.find(brother => brother.image === pic).majors.join(", ");
-      industry_interests.value = brothersData.find(brother => brother.image === pic).industry_interests.join(", ");
-      family.value = brothersData.find(brother => brother.image === pic).family;
-      console.log(currentFilter);
-      if (currentFilter === "All Families" || family.value === currentFilter) {
-        viewlist();
-      }
-    });
+// Get a reference to the family filter select element
+var familyFilter = document.getElementById('familyFilter');
+
+// Add an event listener to the family filter select element
+familyFilter.addEventListener('change', function() {
+  // Update the current filter
+  currentFilter = this.value;
+
+  // Clear the current display
+  const cardContainer = document.querySelector(".card-list-container");
+  cardContainer.innerHTML = "";
+
+  // Refresh the display
+  images.forEach((pic) => {
+    question.value = "Who is this?";
+    answer.value = pic.replace("_", " ").replace(".jpg", "").toUpperCase();
+    image.value = imageFolder + pic;
+    pledgeClass.value = brothersData.find(brother => brother.image === pic).class;
+    hometown.value = brothersData.find(brother => brother.image === pic).hometown;
+    year.value = brothersData.find(brother => brother.image === pic).year;
+    majors.value = brothersData.find(brother => brother.image === pic).majors.join(", ");
+    industry_interests.value = brothersData.find(brother => brother.image === pic).industry_interests.join(", ");
+    family.value = brothersData.find(brother => brother.image === pic).family;
+    console.log(currentFilter);
+    if (currentFilter === "All Families" || family.value === currentFilter) {
+      viewlist();
+    }
   });
+});
 
 //Add question when user clicks 'Add Flashcard' button
 addQuestion.addEventListener("click", () => {

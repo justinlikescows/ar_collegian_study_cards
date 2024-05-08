@@ -252,4 +252,17 @@
     transform: scale(1.05); /* Slightly increase the size of the card */
   }
 
+  #familyFilter {
+    font-size: 16px; /* Change the font size */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #ccc; /* Add a border */
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Remove default appearance for Chrome */
+    -moz-appearance: none; /* Remove default appearance for Firefox */
+    background-color: #31304D; /* Change the background color */
+    color: white; /* Change the text color */
+    text-align: center; /* Center the text */
+  }
+
   
