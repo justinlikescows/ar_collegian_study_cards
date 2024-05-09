@@ -4,9 +4,20 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
+  body::after {
+    content: "";
+    background: url("alex_pham.png");
+    opacity: 0.5; /* Adjust as needed */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  
   body {
-    /* background-color: #f7f9fd; */
-    background-image: url("alex_pham.jpg");
+    position: relative;
   }
   .container {
     width: 90vw;
