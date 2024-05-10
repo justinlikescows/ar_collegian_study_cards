@@ -351,7 +351,7 @@ const brothersData = [
     {
       "name": "Juliana Lee",
       "year": "Junior",
-      "majors": ["Business Administration", "Psychology"],
+      "majors": ["Business Administration", "Psychology", "Digital Arts"],
       "hometown": "San Jose, CA",
       class: "Alpha Omicron",
       "industry_interests": ["Marketing", "UI/UX Design"],
@@ -808,6 +808,8 @@ cardButton.addEventListener(
       }
     })
   );
+
+  
 
 //Card Generate
 function viewlist() {
