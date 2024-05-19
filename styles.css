@@ -6,7 +6,7 @@
   }
   body::after {
     content: "";
-    background: url("alex_pham.png");
+    /* background: url("alex_pham.png"); */
     opacity: 0.5; /* Adjust as needed */
     top: 0;
     left: 0;
